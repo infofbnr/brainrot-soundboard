@@ -6,13 +6,15 @@ body {
 }
 
 .soundboard {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     gap: 15px;
-    margin-top: 20px;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
 }
 
-.sound-button {
+.sound-button, .stop-button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -24,4 +26,13 @@ body {
 
 .sound-button:hover {
     background-color: #666;
+}
+
+.stop-button {
+    grid-column: span 3; /* Make the stop button take a full row */
+    background-color: red;
+}
+
+.stop-button:hover {
+    background-color: darkred;
 }
