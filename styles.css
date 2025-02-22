@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #111;
-    color: white;
+    background-color: #253343;
+    color: whitesmoke;
 }
 
 .soundboard {
@@ -35,7 +35,7 @@ body {
 
 .stop-button {
     grid-column: span 3; /* Make the stop button take a full row */
-    background-color: red;
+    background-color: #dd1400;
 }
 
 .stop-button:hover {
