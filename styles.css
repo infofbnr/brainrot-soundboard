@@ -15,13 +15,18 @@ body {
 }
 
 .sound-button, .stop-button {
-    padding: 10px 20px;
+    width: 100%;
+    height: 60px; /* Set a fixed height for all buttons */
     font-size: 16px;
     border: none;
     cursor: pointer;
     background-color: #444;
     color: white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .sound-button:hover {
@@ -35,4 +40,8 @@ body {
 
 .stop-button:hover {
     background-color: darkred;
+}
+
+a {
+    color: pink
 }
