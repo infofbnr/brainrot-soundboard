@@ -1,2 +1,89 @@
-/* OBFUSCATED BY CSSOBFUSCATOR.COM at 2025/02/22 14:14:18 */
-[class~=soundboard]{display:grid;}[class~=soundboard]{grid-template-columns:repeat(3,1fr);}[class~=soundboard]{gap:11.25pt;}[class~=soundboard],[class~=sound-button]{justify-content:center;}[class~=sound-button]:hover{background-color:#666;}[class~=soundboard]{max-width:4.166666667in;}[class~=soundboard]{margin-left:auto;}[class~=soundboard]{margin-bottom:15pt;}[class~=soundboard]{margin-right:auto;}[class~=soundboard]{margin-top:15pt;}[class~=sound-button],[class~=stop-button]{width:100%;}[class~=sound-button],[class~=stop-button]{height:3.75pc;}[class~=stop-button],[class~=sound-button]{font-size:12pt;}[class~=sound-button]{border-left-width:medium;}[class~=sound-button]{border-bottom-width:medium;}[class~=sound-button]{border-right-width:medium;}[class~=sound-button]{border-top-width:medium;}[class~=sound-button]{border-left-style:none;}[class~=sound-button]{border-bottom-style:none;}[class~=sound-button]{border-right-style:none;}[class~=sound-button]{border-top-style:none;}[class~=sound-button]{border-left-color:currentColor;}body{font-family:Arial,sans-serif;}[class~=sound-button]{border-bottom-color:currentColor;}[class~=stop-button]:hover{background-color:darkred;}[class~=sound-button]{border-right-color:currentColor;}[class~=sound-button]{border-top-color:currentColor;}[class~=sound-button]{border-image:none;}[class~=sound-button],[class~=stop-button]{cursor:pointer;}[class~=stop-button],[class~=sound-button]{background-color:#444;}[class~=sound-button],[class~=stop-button]{color:white;}body{text-align:center;}[class~=sound-button],[class~=stop-button]{border-radius:.3125pc;}body{background-color:#253343;}[class~=sound-button],[class~=stop-button]{display:flex;}[class~=stop-button],[class~=sound-button]{align-items:center;}[class~=sound-button],[class~=stop-button]{font-family:"Fira Sans",sans-serif;}[class~=stop-button]{border-left-width:medium;}body{color:whitesmoke;}[class~=stop-button]{border-bottom-width:medium;}[class~=stop-button]{border-right-width:medium;}[class~=stop-button]{border-top-width:medium;}[class~=stop-button]{border-left-style:none;}[class~=stop-button]{border-bottom-style:none;}[class~=stop-button]{border-right-style:none;}[class~=stop-button]{border-top-style:none;}[class~=stop-button]{border-left-color:currentColor;}[class~=stop-button]{border-bottom-color:currentColor;}[class~=stop-button]{border-right-color:currentColor;}[class~=stop-button]{border-top-color:currentColor;}[class~=stop-button]{border-image:none;}a{color:pink;}[class~=stop-button]{justify-content:center;}.stop-button{grid-column:span 3;}.stop-button{background-color:#dd1400;}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #253343;
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 60px; /* Ensures content isn't hidden under navbar */
+}
+
+.navbar {
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: #222;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #c9d1d9;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background: rgba(88, 166, 255, 0.1);
+    border-color: #58a6ff;
+    color: #58a6ff;
+}
+
+.soundboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.sound-button, .stop-button {
+    width: 100%;
+    height: 60px; /* Set a fixed height for all buttons */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.sound-button:hover {
+    background-color: #666;
+}
+
+.stop-button {
+    grid-column: span 3; /* Make the stop button take a full row */
+    background-color: #dd1400;
+}
+
+.stop-button:hover {
+    background-color: darkred;
+}
+
+/* Ensures all links, including navbar, have consistent color */
+a, .nav-link {
+    color: pink;
+}
